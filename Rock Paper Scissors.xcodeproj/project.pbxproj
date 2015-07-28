@@ -7,17 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92B38BAB1B67EFF800121E40 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B38BAA1B67EFF800121E40 /* MatchViewController.swift */; };
+		92B38BB51B680F1000121E40 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B38BB41B680F1000121E40 /* Rock_Paper_ScissorsTests.swift */; };
+		92B38BBC1B680FDE00121E40 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B38BAC1B67F9BC00121E40 /* GameRules.swift */; };
+		92B38BBD1B680FE100121E40 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B38BAC1B67F9BC00121E40 /* GameRules.swift */; };
 		92DE48CF1B67D5B500AC6354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE48CE1B67D5B500AC6354 /* AppDelegate.swift */; };
-		92DE48D11B67D5B500AC6354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE48D01B67D5B500AC6354 /* ViewController.swift */; };
+		92DE48D11B67D5B500AC6354 /* InitialChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE48D01B67D5B500AC6354 /* InitialChooseViewController.swift */; };
 		92DE48D41B67D5B500AC6354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D21B67D5B500AC6354 /* Main.storyboard */; };
 		92DE48D61B67D5B500AC6354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D51B67D5B500AC6354 /* Assets.xcassets */; };
 		92DE48D91B67D5B500AC6354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D71B67D5B500AC6354 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		92B38BB71B680F1000121E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92DE48C31B67D5B500AC6354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DE48CA1B67D5B500AC6354;
+			remoteInfo = "Rock Paper Scissors";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		92B38BAA1B67EFF800121E40 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		92B38BAC1B67F9BC00121E40 /* GameRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
+		92B38BB21B680F1000121E40 /* Rock Paper ScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper ScissorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B38BB41B680F1000121E40 /* Rock_Paper_ScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsTests.swift; sourceTree = "<group>"; };
+		92B38BB61B680F1000121E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DE48CB1B67D5B500AC6354 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DE48CE1B67D5B500AC6354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92DE48D01B67D5B500AC6354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92DE48D01B67D5B500AC6354 /* InitialChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialChooseViewController.swift; sourceTree = "<group>"; };
 		92DE48D31B67D5B500AC6354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DE48D51B67D5B500AC6354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92DE48D81B67D5B500AC6354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -25,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		92B38BAF1B680F1000121E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92DE48C81B67D5B500AC6354 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92B38BB31B680F1000121E40 /* Rock Paper ScissorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				92B38BB41B680F1000121E40 /* Rock_Paper_ScissorsTests.swift */,
+				92B38BB61B680F1000121E40 /* Info.plist */,
+			);
+			path = "Rock Paper ScissorsTests";
+			sourceTree = "<group>";
+		};
 		92DE48C21B67D5B500AC6354 = {
 			isa = PBXGroup;
 			children = (
 				92DE48CD1B67D5B500AC6354 /* Rock Paper Scissors */,
+				92B38BB31B680F1000121E40 /* Rock Paper ScissorsTests */,
 				92DE48CC1B67D5B500AC6354 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				92DE48CB1B67D5B500AC6354 /* Rock Paper Scissors.app */,
+				92B38BB21B680F1000121E40 /* Rock Paper ScissorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,11 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				92DE48CE1B67D5B500AC6354 /* AppDelegate.swift */,
-				92DE48D01B67D5B500AC6354 /* ViewController.swift */,
+				92DE48D01B67D5B500AC6354 /* InitialChooseViewController.swift */,
 				92DE48D21B67D5B500AC6354 /* Main.storyboard */,
 				92DE48D51B67D5B500AC6354 /* Assets.xcassets */,
 				92DE48D71B67D5B500AC6354 /* LaunchScreen.storyboard */,
 				92DE48DA1B67D5B500AC6354 /* Info.plist */,
+				92B38BAA1B67EFF800121E40 /* MatchViewController.swift */,
+				92B38BAC1B67F9BC00121E40 /* GameRules.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -67,6 +106,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		92B38BB11B680F1000121E40 /* Rock Paper ScissorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B38BB91B680F1000121E40 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsTests" */;
+			buildPhases = (
+				92B38BAE1B680F1000121E40 /* Sources */,
+				92B38BAF1B680F1000121E40 /* Frameworks */,
+				92B38BB01B680F1000121E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92B38BB81B680F1000121E40 /* PBXTargetDependency */,
+			);
+			name = "Rock Paper ScissorsTests";
+			productName = "Rock Paper ScissorsTests";
+			productReference = 92B38BB21B680F1000121E40 /* Rock Paper ScissorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		92DE48CA1B67D5B500AC6354 /* Rock Paper Scissors */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92DE48DD1B67D5B500AC6354 /* Build configuration list for PBXNativeTarget "Rock Paper Scissors" */;
@@ -93,8 +150,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gianluca Bargelli";
 				TargetAttributes = {
+					92B38BB11B680F1000121E40 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 92DE48CA1B67D5B500AC6354;
+					};
 					92DE48CA1B67D5B500AC6354 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = F89MAVK6P6;
 					};
 				};
 			};
@@ -112,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				92DE48CA1B67D5B500AC6354 /* Rock Paper Scissors */,
+				92B38BB11B680F1000121E40 /* Rock Paper ScissorsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		92B38BB01B680F1000121E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92DE48C91B67D5B500AC6354 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,16 +200,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		92B38BAE1B680F1000121E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B38BB51B680F1000121E40 /* Rock_Paper_ScissorsTests.swift in Sources */,
+				92B38BBD1B680FE100121E40 /* GameRules.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92DE48C71B67D5B500AC6354 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DE48D11B67D5B500AC6354 /* ViewController.swift in Sources */,
+				92B38BAB1B67EFF800121E40 /* MatchViewController.swift in Sources */,
+				92DE48D11B67D5B500AC6354 /* InitialChooseViewController.swift in Sources */,
 				92DE48CF1B67D5B500AC6354 /* AppDelegate.swift in Sources */,
+				92B38BBC1B680FDE00121E40 /* GameRules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92B38BB81B680F1000121E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DE48CA1B67D5B500AC6354 /* Rock Paper Scissors */;
+			targetProxy = 92B38BB71B680F1000121E40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		92DE48D21B67D5B500AC6354 /* Main.storyboard */ = {
@@ -161,6 +250,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		92B38BBA1B680F1000121E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rock Paper ScissorsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Rock-Paper-ScissorsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rock Paper Scissors.app/Rock Paper Scissors";
+			};
+			name = Debug;
+		};
+		92B38BBB1B680F1000121E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rock Paper ScissorsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Rock-Paper-ScissorsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rock Paper Scissors.app/Rock Paper Scissors";
+			};
+			name = Release;
+		};
 		92DE48DB1B67D5B500AC6354 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -246,10 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Rock-Paper-Scissors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -257,16 +374,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Rock-Paper-Scissors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		92B38BB91B680F1000121E40 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B38BBA1B680F1000121E40 /* Debug */,
+				92B38BBB1B680F1000121E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		92DE48C61B67D5B500AC6354 /* Build configuration list for PBXProject "Rock Paper Scissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -283,6 +412,7 @@
 				92DE48DF1B67D5B500AC6354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
