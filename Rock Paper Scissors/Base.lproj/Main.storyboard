@@ -100,28 +100,43 @@
                                     </mask>
                                 </variation>
                             </view>
+			    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-ev-8Pz">
+				<rect key="frame" x="-23" y="-15" width="46" height="30"/>
+				<state key="normal" title="See History"/>
+				<connections>
+				    <segue destination="z8k-3E-7o1" kind="presentation" identifier="showHistory" id="5Fm-tP-aP5"/>
+				</connections>
+			    </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
+			    <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nAh-ev-8Pz" secondAttribute="bottom" constant="20" id="1om-pV-9qU"/>
+			    <constraint firstItem="nAh-ev-8Pz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5n8-7F-yWl"/>
                             <constraint firstItem="s7b-lr-AIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjo-lb-ZRn"/>
                             <constraint firstItem="s7b-lr-AIJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OFz-hq-rht"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="s7b-lr-AIJ"/>
+				<exclude reference="nAh-ev-8Pz"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Jjo-lb-ZRn"/>
                                 <exclude reference="OFz-hq-rht"/>
+				<exclude reference="5n8-7F-yWl"/>
+				<exclude reference="1om-pV-9qU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="s7b-lr-AIJ"/>
+				<include reference="nAh-ev-8Pz"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Jjo-lb-ZRn"/>
                                 <include reference="OFz-hq-rht"/>
+				<include reference="5n8-7F-yWl"/>
+				<include reference="1om-pV-9qU"/>
                             </mask>
                         </variation>
                     </view>
@@ -207,16 +222,10 @@
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="41"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="95" y="416" width="210" height="33"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-jL-Luc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Try Again"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="168" y="480" width="65" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="tryAgain:" destination="3qU-ug-EvD" eventType="touchUpInside" id="6v9-iV-qhn"/>
                                 </connections>
@@ -237,12 +246,12 @@
                                 <exclude reference="pOk-jL-Luc"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="JAY-vh-bLh"/>
-                                <exclude reference="rJS-Vg-5TX"/>
                                 <exclude reference="vi0-Bb-9ip"/>
                                 <exclude reference="w3T-kS-ViF"/>
                                 <exclude reference="wig-GI-1wn"/>
                                 <exclude reference="yNw-ur-DtI"/>
+				<exclude reference="JAY-vh-bLh"/>
+				<exclude reference="rJS-Vg-5TX"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -251,12 +260,12 @@
                                 <include reference="pOk-jL-Luc"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="JAY-vh-bLh"/>
-                                <include reference="rJS-Vg-5TX"/>
                                 <include reference="vi0-Bb-9ip"/>
                                 <include reference="w3T-kS-ViF"/>
                                 <include reference="wig-GI-1wn"/>
                                 <include reference="yNw-ur-DtI"/>
+				<include reference="JAY-vh-bLh"/>
+				<include reference="rJS-Vg-5TX"/>
                             </mask>
                         </variation>
                     </view>
@@ -270,6 +279,106 @@
             </objects>
             <point key="canvasLocation" x="1336" y="389"/>
         </scene>
+	<!--Match History View Controller-->
+	<scene sceneID="5rt-fo-gAl">
+	    <objects>
+		<viewController id="z8k-3E-7o1" customClass="MatchHistoryViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+		    <layoutGuides>
+			<viewControllerLayoutGuide type="top" id="DYD-zp-5Ww"/>
+			<viewControllerLayoutGuide type="bottom" id="HXu-QT-b2z"/>
+		    </layoutGuides>
+		    <view key="view" contentMode="scaleToFill" id="yPQ-H0-MgA">
+			<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+			<subviews>
+			    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zxM-lf-gzZ">
+				<rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+				<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+				<prototypes>
+				    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" textLabel="413-dg-pLK" detailTextLabel="ve2-WB-hpW" style="IBUITableViewCellStyleValue1" id="hsI-B1-yuC">
+					<autoresizingMask key="autoresizingMask"/>
+					<tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hsI-B1-yuC" id="sGE-ci-3yG">
+					    <autoresizingMask key="autoresizingMask"/>
+					    <subviews>
+						<label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="413-dg-pLK">
+						    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+						    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+						    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+						    <nil key="highlightedColor"/>
+						    <variation key="widthClass=compact">
+							<fontDescription key="fontDescription" type="system" pointSize="16"/>
+						    </variation>
+						</label>
+						<label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ve2-WB-hpW">
+						    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+						    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+						    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+						    <nil key="highlightedColor"/>
+						    <variation key="widthClass=compact">
+							<fontDescription key="fontDescription" type="system" pointSize="16"/>
+						    </variation>
+						</label>
+					    </subviews>
+					</tableViewCellContentView>
+				    </tableViewCell>
+				</prototypes>
+				<connections>
+				    <outlet property="dataSource" destination="z8k-3E-7o1" id="Lss-sG-h49"/>
+				</connections>
+			    </tableView>
+			    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-4h-LNy">
+				<rect key="frame" x="-23" y="-15" width="46" height="30"/>
+				<state key="normal" title="Dismiss"/>
+				<connections>
+				    <action selector="dismissDialog:" destination="z8k-3E-7o1" eventType="touchUpInside" id="EqU-Of-JqR"/>
+				</connections>
+			    </button>
+			</subviews>
+			<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+			<constraints>
+			    <constraint firstItem="zxM-lf-gzZ" firstAttribute="trailing" secondItem="YJQ-4h-LNy" secondAttribute="trailing" id="9sm-m2-tCQ"/>
+			    <constraint firstItem="HXu-QT-b2z" firstAttribute="top" secondItem="YJQ-4h-LNy" secondAttribute="bottom" constant="14" id="NRx-Tq-x7W"/>
+			    <constraint firstItem="YJQ-4h-LNy" firstAttribute="leading" secondItem="yPQ-H0-MgA" secondAttribute="leading" id="Vx7-IG-E8q"/>
+			    <constraint firstItem="zxM-lf-gzZ" firstAttribute="top" secondItem="DYD-zp-5Ww" secondAttribute="bottom" id="XXo-Iq-qyS"/>
+			    <constraint firstAttribute="trailing" secondItem="zxM-lf-gzZ" secondAttribute="trailing" id="d6e-nB-3MN"/>
+			    <constraint firstItem="YJQ-4h-LNy" firstAttribute="top" secondItem="zxM-lf-gzZ" secondAttribute="bottom" id="lIO-Ot-f1S"/>
+			    <constraint firstItem="zxM-lf-gzZ" firstAttribute="leading" secondItem="YJQ-4h-LNy" secondAttribute="leading" id="v9F-dw-PGx"/>
+			</constraints>
+			<variation key="default">
+			    <mask key="subviews">
+				<exclude reference="zxM-lf-gzZ"/>
+				<exclude reference="YJQ-4h-LNy"/>
+			    </mask>
+			    <mask key="constraints">
+				<exclude reference="9sm-m2-tCQ"/>
+				<exclude reference="XXo-Iq-qyS"/>
+				<exclude reference="d6e-nB-3MN"/>
+				<exclude reference="v9F-dw-PGx"/>
+				<exclude reference="Vx7-IG-E8q"/>
+				<exclude reference="lIO-Ot-f1S"/>
+				<exclude reference="NRx-Tq-x7W"/>
+			    </mask>
+			</variation>
+			<variation key="widthClass=compact">
+			    <mask key="subviews">
+				<include reference="zxM-lf-gzZ"/>
+				<include reference="YJQ-4h-LNy"/>
+			    </mask>
+			    <mask key="constraints">
+				<include reference="9sm-m2-tCQ"/>
+				<include reference="XXo-Iq-qyS"/>
+				<include reference="d6e-nB-3MN"/>
+				<include reference="v9F-dw-PGx"/>
+				<include reference="Vx7-IG-E8q"/>
+				<include reference="lIO-Ot-f1S"/>
+				<include reference="NRx-Tq-x7W"/>
+			    </mask>
+			</variation>
+		    </view>
+		</viewController>
+		<placeholder placeholderIdentifier="IBFirstResponder" id="IO6-ZN-KfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+	    </objects>
+	    <point key="canvasLocation" x="907.5" y="1079"/>
+	</scene>
     </scenes>
     <resources>
         <image name="Paper" width="86" height="86"/>

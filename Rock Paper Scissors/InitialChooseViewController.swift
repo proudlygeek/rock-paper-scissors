@@ -9,9 +9,11 @@
 import UIKit
 
 class InitialChooseViewController: UIViewController {
+    var history: HistoryLog!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+	self.history = HistoryLog(entries: [])
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -29,6 +31,13 @@ class InitialChooseViewController: UIViewController {
             }
             
             controller.computerChoice = randomComputerChoice()
+	    controller.history = self.history
+
+	} else if segue.identifier == "showHistory" {
+	    let controller = segue.destinationViewController as!
+		MatchHistoryViewController
+
+	    controller.history = self.history
         }
     }
     
@@ -43,7 +52,8 @@ class InitialChooseViewController: UIViewController {
         
         controller.userChoice = Choice.Rock
         controller.computerChoice = randomComputerChoice()
-        
+	controller.history = self.history
+
         self.presentViewController(controller, animated: true, completion: nil)
     }
     

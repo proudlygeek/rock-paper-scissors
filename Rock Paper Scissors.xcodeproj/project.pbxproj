@@ -16,6 +16,7 @@
 		92DE48D41B67D5B500AC6354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D21B67D5B500AC6354 /* Main.storyboard */; };
 		92DE48D61B67D5B500AC6354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D51B67D5B500AC6354 /* Assets.xcassets */; };
 		92DE48D91B67D5B500AC6354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DE48D71B67D5B500AC6354 /* LaunchScreen.storyboard */; };
+		92E0A68E1B6E86530046445D /* MatchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0A68D1B6E86530046445D /* MatchHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		92DE48D51B67D5B500AC6354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92DE48D81B67D5B500AC6354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92DE48DA1B67D5B500AC6354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E0A68D1B6E86530046445D /* MatchHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				92DE48DA1B67D5B500AC6354 /* Info.plist */,
 				92B38BAA1B67EFF800121E40 /* MatchViewController.swift */,
 				92B38BAC1B67F9BC00121E40 /* GameRules.swift */,
+				92E0A68D1B6E86530046445D /* MatchHistoryViewController.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				92B38BAB1B67EFF800121E40 /* MatchViewController.swift in Sources */,
 				92DE48D11B67D5B500AC6354 /* InitialChooseViewController.swift in Sources */,
+				92E0A68E1B6E86530046445D /* MatchHistoryViewController.swift in Sources */,
 				92DE48CF1B67D5B500AC6354 /* AppDelegate.swift in Sources */,
 				92B38BBC1B680FDE00121E40 /* GameRules.swift in Sources */,
 			);
@@ -395,6 +399,7 @@
 				92B38BBB1B680F1000121E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DE48C61B67D5B500AC6354 /* Build configuration list for PBXProject "Rock Paper Scissors" */ = {
 			isa = XCConfigurationList;
