@@ -10,6 +10,7 @@ import UIKit
 class MatchViewController: UIViewController {
     var userChoice: Choice!
     var computerChoice: Choice!
+    var history: HistoryLog!
     
     @IBOutlet weak var userChoiceImage: UIImageView!
     @IBOutlet weak var computerChoiceImage: UIImageView!
@@ -35,6 +36,8 @@ class MatchViewController: UIViewController {
             outcomeLabel.text = "You Lose 😓"
             
         }
+
+	self.history.entries.append(HistoryEntry(result: outcomeLabel.text!, moves: "\(self.userChoice.rawValue) vs. \(self.computerChoice.rawValue)"))
     }
     
     @IBAction func tryAgain(sender: UIButton) {
